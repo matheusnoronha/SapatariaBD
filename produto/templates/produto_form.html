@@ -1,11 +1,15 @@
 {% extends 'base.html' %}
+{% load crispy_forms_tags %}
+    {% block title %}
 
-{% block main %}
+        Cadastro Produto
+    {% endblock %}
+
+{% block content %}
     <form method="POST" novalidate>
         {% csrf_token %}
-        {{ form.as_p }}
-        <input type="submit" value="Save">
-        <button type="submit">Cadastrar produto</button>
+        {{ form|crispy}}
+        <button type="submit" class="btn btn-success">Cadastrar produto</button>
     </form>
 
 {% endblock %}
