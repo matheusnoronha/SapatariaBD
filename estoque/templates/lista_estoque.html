@@ -1,0 +1,10 @@
+{% extends 'base.html' %}
+    {% block main %}
+        {%for k in estoque%}
+            <div>
+                {{ k.produto }}
+                {{ k.quantidade }}
+            </div>
+        {% endfor %}
+
+    {% endblock %}

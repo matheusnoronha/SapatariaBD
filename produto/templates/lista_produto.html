@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+    {% block main %}
+        {%for k in produtos%}
+            <div>
+                <img src="{{ k.foto }}">
+                {{ k.nome }}
+                {{ k.marca }}
+                {{ k.cor }}
+                {{ k.tamanho }}
+                {{ k.valor }}
+            </div>
+        {% endfor %}
+    {% endblock %}
