@@ -20,8 +20,10 @@ from core.views import home
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', home),
+    path('', home,name = 'home'),
     path('produto/',include('produto.urls')),
-    path('produto/estoque/',include('estoque.urls'))
+    path('produto/estoque/',include('estoque.urls')),
+    path('accounts/',include('django.contrib.auth.urls')),
+
 
 ]
