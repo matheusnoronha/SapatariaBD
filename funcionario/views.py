@@ -10,6 +10,9 @@ def listaFuncionario(request):
     data['funcionarios'] = Funcionario.objects.all()
     return render(request, 'lista_funcionario.html', data)
 
+
+
+
 def cadastroFuncionario(request,pk,pp):
     if (request.method == "POST"):
         form = CadastroFuncionarioForm(request.POST)

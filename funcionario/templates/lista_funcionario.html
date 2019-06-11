@@ -1,16 +1,15 @@
 {% extends 'base.html' %}
 
-{% block title %} Lista Funcionario{% endblock %}
+{% block title %} Lista Funcionarios{% endblock %}
 {% block content %}
 
      <div class="row justify-content-around">
-        {%for k in produtos%}
+        {%for k in funcionarios%}
             <div class="row">
                <div class="card" style="width: 18rem;">
-                  <img src="..." class="card-img-top" alt="...">
                   <div class="card-body">
-                      <h5 class="card-title">{{ k.pessoa.nome }}</h5>
-                      <p class="card-text">R$ {{ k.pessoa.cpf }}</p>
+                      <h5 class="card-title">NOME: {{ k.pessoa.nome }}</h5>
+                      <p class="card-text">CPF:{{ k.pessoa.cpf }}</p>
                     <a href="#" class="btn btn-primary">Detalhes</a>
                   </div>
                </div>
