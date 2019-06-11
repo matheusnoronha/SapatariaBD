@@ -5,3 +5,4 @@ class CadastroProdutoForm(ModelForm):
     class Meta:
         model = Produto
         fields = ['nome','tamanho','marca','cor','valor']
+

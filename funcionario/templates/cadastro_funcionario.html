@@ -1,0 +1,15 @@
+{% extends 'base.html' %}
+{% load crispy_forms_tags %}
+    {% block title %}
+
+        Cadastro Funcionario
+    {% endblock %}
+
+{% block content %}
+    <form method="POST" novalidate>
+        {% csrf_token %}
+        {{ form|crispy}}
+        <button type="submit" class="btn btn-success">Cadastrar Funcionario</button>
+    </form>
+
+{% endblock %}
