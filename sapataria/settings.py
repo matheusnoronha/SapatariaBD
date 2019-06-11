@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'gerente',
     'estoque',
     'core',
+    'cliente',
 
 ]
 
