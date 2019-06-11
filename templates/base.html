@@ -29,8 +29,14 @@
                 </div>
               </li>
 
-              <li class="nav-item">
-                <a class="nav-link" href="{% url 'url_lista_estoque' %}">Estoque</a>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                  Estoque
+                </a>
+                <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                  <a class="dropdown-item" href="{% url 'url_lista_estoque' %}">Estoque de Produtos</a>
+                  <a class="dropdown-item" href="{% url 'url_cadastro_estoque' %}">Adicionar Produtos ao estoque</a>
+                </div>
               </li>
 
               <li class="nav-item dropdown">
@@ -39,7 +45,7 @@
                 </a>
                 <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
                   <a class="dropdown-item" href="{% url 'url_lista_produto' %}">Todos os produtos</a>
-                  <a class="dropdown-item" href="#">Implementar</a>
+                  <a class="dropdown-item" href="{% url 'url_cadastro_produto' %}">Cadastro Produto</a>
                   <a class="dropdown-item" href="#">Implementar</a>
                 </div>
               </li>
@@ -54,7 +60,7 @@
                 </div>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="{% url 'url_lista_estoque' %}">Vendas</a>
+                <a class="nav-link" href="#">Vendas</a>
               </li>
               <li class="nav-item" margin-left>
                 <a class="nav-link" href="{% url 'logout' %}">Logout</a>

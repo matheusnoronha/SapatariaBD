@@ -1,10 +1,13 @@
 {% extends 'base.html' %}
     {% block content %}
         {%for k in estoque%}
-            <div>
-                {{ k.produto }}
-                {{ k.quantidade }}
+            <div class="card text-white bg-dark mb-3" style="max-width: 18rem;">
+              <div class="card-header">Estoque</div>
+              <div class="card-body">
+                <h5 class="card-title">{{ k.produto.nome }}</h5>
+                <p class="card-text">Quantidade: {{ k.quantidade }} </p>
+              </div>
             </div>
-        {% endfor %}
 
+        {% endfor %}
     {% endblock %}
