@@ -27,6 +27,6 @@ urlpatterns = [
     path('accounts/',include('django.contrib.auth.urls')),
     path('pessoa/',include('pessoa.urls')),
     path('cliente/',include('cliente.urls')),
-
+    path('venda/',include('venda.urls')),
 
 ]
